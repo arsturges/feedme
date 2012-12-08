@@ -5,6 +5,7 @@ app.debug = False # Set to false before deploying!
 app.config.from_object(__name__)
 
 
+
 @app.route('/')
 def index():
     return render_template('home.html', title = "Home")
