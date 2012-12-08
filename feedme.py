@@ -8,7 +8,7 @@ app.config.from_object(__name__)
 
 @app.route('/')
 def index():
-    return render_template('home.html', title = "Home", yelp_api2=yelp_api2)
+    return render_template('restaurants.html', title = "Home", yelp_api2=yelp_api2)
 
 @app.route('/pods')
 def pods():
@@ -21,10 +21,6 @@ def map():
 @app.route('/trucks')
 def trucks():
     return render_template('trucks.html', title = "Trucks") 
-
-@app.route('/restaurants')
-def restaurants():
-    return render_template('restaurants.html', title = "Restaurants") 
 
 @app.route('/help')
 def help():
