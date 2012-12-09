@@ -35,6 +35,6 @@ def contact():
     return render_template('contact.html', title = "Contact") 
 
 if __name__ == '__main__':
-    app.run() #host='0.0.0.0',port=80) #disable app.debug before pushing to production.
+    app.run(host='0.0.0.0',port=80)
+    #app.run() #host='0.0.0.0',port=80) #disable app.debug before pushing to production.
     print google_maps_api['api_key']
-    print 'andrew'
